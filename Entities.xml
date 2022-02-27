@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<!-- Level Setup -->
+<Level>
+
+  <!-- Entity Templates -->
+  <Templates>
+
+    <!-- Scenery Types -->
+    <EntityTemplate Type="Scenery" Name="Skybox" Mesh="Skybox.x"/>
+    <EntityTemplate Type="Scenery" Name="Floor" Mesh="Floor.x"/>
+    <EntityTemplate Type="Scenery" Name="Building" Mesh="Building.x"/>
+    <EntityTemplate Type="Scenery" Name="Tree" Mesh="Tree1.x"/>
+
+    
+    <!-- Other Types -->
+    <EntityTemplate Type="Tank" Name="Rogue Scout" Mesh="HoverTank02.x" 
+                    HP="100" Acceleration="10" TurnSpeed="2" ShellDamage="20" 
+                    TurretTurnSpeed="2"/>
+    
+    <EntityTemplate Type="Tank" Name="Oberon MkII" Mesh="HoverTank07.x" HP="120" 
+                    Acceleration="8" TurnSpeed="3" ShellDamage="25" TurretTurnSpeed="3"/>
+  </Templates>
+  <!-- End of Entity Types -->
+
+  
+  <!-- Scene Setup -->
+  <Entities>
+
+    <!-- Environment Positions -->
+    <Entity Type="Skybox" Name="Skybox">
+      <Position X="0.0" Y="0.0" Z="0.0"/>
+      <Rotation X="30.0" Y="30.0" Z="10.0"/>
+      <Scale X="10.0" Y="10.0" Z="10.0"/>
+    </Entity>
+    
+    <Entity Type="Floor" Name="Floor">
+      <Position X="0.0" Y="0." Z="0.0"/>
+      <Scale X="1.0" Y="1.0" Z="1.0"/>
+    </Entity>
+    
+    <Entity Type="Building" Name="Building">
+      <Position X=".0" Y=".0" Z="40.0"/>
+      <Rotation X="0.0" Y="0.0" Z="10.0"/>
+    </Entity>
+
+
+    <!-- Object Positions -->
+    <Entity Type="Tank" Name="0" Template="Rogue Scout">
+      <Position X="-10.0" Y="0.0" Z="-7.0"/>
+      <Rotation X="0.0" Y="90.0" Z="0.0"/>
+      <Scale X="3" Y="3" Z="3"/>
+      <Patrol1 X="15.0f" Y="0.0f" Z="35.0f"/>
+      <Patrol2 X="40.0f" Y="0.0f" Z="50.0f"/>
+      <Patrol3 X="15.0f" Y="0.0f" Z="40.0f"/><!--<Component Type="Drive" MaxSpeed="40" TurnSpeed="3"/>-->
+      <!--<Component Type="Patrol" Range="12"/>-->
+      <!--<Component Type="Spin" X="0" Y="2" Z="0"/>-->
+    </Entity>
+
+    <Entity Type="Tank" Name="1" Template="Oberon MkII">
+      <Position X="-10.0" Y="0.0" Z="-7.0"/>
+      <Rotation X="0.0" Y="90.0" Z="0.0"/>
+      <Scale X="3" Y="3" Z="3"/> 
+      <Patrol1 X="-15.0f" Y="0.0f" Z="35.0f"/>
+      <Patrol2 X="-40.0f" Y="0.0f" Z="50.0f"/>
+      <Patrol3 X="-15.0f" Y="0.0f" Z="40.0f"/>/>
+    </Entity>
+    
+    <!-- Scenery Positions -->
+    <Entity Type="Tree" Name="11">
+      <Position X="0" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="12">
+      <Position X="5" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="13">
+      <Position X="10" Y="0" Z="5"/>
+    </Entity>
+    <Entity Type="Tree" Name="14">
+      <Position X="15" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="15">
+      <Position X="20" Y="0" Z="5"/>
+    </Entity>
+    <Entity Type="Tree" Name="16">
+      <Position X="25" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="17">
+      <Position X="30" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="18">
+      <Position X="35" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="19">
+      <Position X="-5" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="20">
+      <Position X="-10" Y="0" Z="45"/>
+    </Entity>
+
+    <Entity Type="Tree" Name="21">
+      <Position X="-15" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="22">
+      <Position X="-20" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="23">
+      <Position X="-25" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="24">
+      <Position X="-30" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="25">
+      <Position X="-35" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="26">
+      <Position X="-40" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="27">
+      <Position X="-45" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="28">
+      <Position X="-50" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="29">
+      <Position X="-55" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="30">
+      <Position X="-60" Y="0" Z="40"/>
+    </Entity>
+
+    <Entity Type="Tree" Name="31">
+      <Position X="-65" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="32">
+      <Position X="-70" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="33">
+      <Position X="-75" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="34">
+      <Position X="-80" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="35">
+      <Position X="-85" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="36">
+      <Position X="-90" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="37">
+      <Position X="-95" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="38">
+      <Position X="-100" Y="0" Z="40"/>
+    </Entity>
+    <Entity Type="Tree" Name="39">
+      <Position X="-105" Y="0" Z="45"/>
+    </Entity>
+    <Entity Type="Tree" Name="40">
+      <Position X="-110" Y="0" Z="40"/>
+    </Entity>
+
+
+
+  </Entities>
+  <!-- End of Scene Setup -->
+
+</Level>
